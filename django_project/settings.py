@@ -25,12 +25,14 @@ SECRET_KEY = 'django-insecure-4ju2n@$f9d0c=h)_g0lbb%k9&@rf(xa$d$g$&5ri$uf)*gev^4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".replit.dev", ".replit.app"]
-CSRF_TRUSTED_ORIGINS = ["https://*.replit.dev", "https://*.replit.app"]
+#ALLOWED_HOSTS = [".replit.dev", ".replit.app"]
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://9faba303-ffc8-4a9d-8475-f4888926b369-00-zfhzrgjdva0s.janeway.replit.dev:8000',]
 
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
