@@ -33,6 +33,7 @@ CSRF_TRUSTED_ORIGINS = ['https://9faba303-ffc8-4a9d-8475-f4888926b369-00-zfhzrgj
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
